@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<Header>
+		<Title>HttpGet</Title>
+		<Author>Can Canbolat</Author>
+		<Shortcut>getasync</Shortcut>
+		<Description>ApiController Http Get Endpoint</Description>
+		<SnippetTypes>
+			<SnippetType>Expansion</SnippetType>
+		</SnippetTypes>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal Editable="true">
+				<ID>EndpointName</ID>
+				<ToolTip>Endpoint name</ToolTip>
+				<Default>EndpointName</Default>
+				<Function></Function>
+			</Literal>
+		</Declarations>
+		<Code Language="csharp" Kind="method decl">
+			<![CDATA[[HttpGet]
+			public async Task<IActionResult> $EndpointName$()
+			{
+				$end$
+			
+				return Ok();
+			}
+			]]>
+		</Code>
+	</Snippet>
+</CodeSnippet>

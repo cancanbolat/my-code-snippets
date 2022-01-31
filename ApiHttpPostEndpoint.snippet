@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<Header>
+		<Title>HttpGet</Title>
+		<Author>Can Canbolat</Author>
+		<Shortcut>postasync</Shortcut>
+		<Description>ApiController Http Get Endpoint</Description>
+		<SnippetTypes>
+			<SnippetType>Expansion</SnippetType>
+		</SnippetTypes>
+	</Header>
+	<Snippet>
+		<Declarations>
+			<Literal Editable="true">
+				<ID>EndpointName</ID>
+				<ToolTip>Endpoint name</ToolTip>
+				<Default>EndpointName</Default>
+				<Function></Function>
+			</Literal>
+			<Literal Editable="true">
+				<ID>From</ID>
+				<ToolTip>From type</ToolTip>
+				<Default>From</Default>
+				<Function></Function>
+			</Literal>
+			<Literal Editable="true">
+				<ID>Model</ID>
+				<ToolTip>Model class</ToolTip>
+				<Default>Model</Default>
+				<Function></Function>
+			</Literal>
+		</Declarations>
+		<Code Language="csharp" Kind="method decl">
+			<![CDATA[[HttpPost]
+			public async Task<IActionResult> $EndpointName$([$From$] $Model$ $model$)
+			{
+				$end$
+			
+				return Created("", $model$);
+			}
+			]]>
+		</Code>
+	</Snippet>
+</CodeSnippet>
